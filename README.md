@@ -19,7 +19,7 @@ A list of tutorials that work towards the making of small to large projects in C
 Name | Description | Link | Tags
 -|-|-|-
 bitwise |  Bitwise is an educational project where we create the software/hardware stack for a computer from scratch. | [GitHub](https://github.com/pervognsen/bitwise) | `abandoned`, `video`
-Emulator 101 | Writing an arcade game emulator is an awesome learning project, and this tutorial will take you through the entire process in a detailed way. Want to really learn how a CPU works? Writing an emulator is the best way to learn about it. | [Link](http://emulator101.com/) | `text`
+Emulator 101 | Writing an arcade game emulator is an awesome learning project, and this tutorial will take you through the entire process in a detailed way. Want to really learn how a CPU works? Writing an emulator is the best way to learn about it. | [Link](https://github.com/albert-yu/emulator-101) | `text`
 Virtual Machine in C | Writing a VM in C | [Link](https://felix.engineer/blogs/virtual-machine-in-c/) | `text`, `virtual-machine`
 Writing a CHIP-8 emulator | Writing a Chip 8 emulator | <li>[Part 1](http://craigthomas.ca/blog/2014/06/21/writing-a-chip-8-emulator-part-1/)</li><li>[Part 2](http://craigthomas.ca/blog/2014/07/17/writing-a-chip-8-emulator-part-2/)</li><li>[Part 3](http://craigthomas.ca/blog/2015/02/19/writing-a-chip-8-emulator-draw-command-part-3/)</li><li>[Part 4](http://craigthomas.ca/blog/2017/10/15/writing-a-chip-8-emulator-built-in-font-set-part-4/)</li><li>[Part 5](http://craigthomas.ca/blog/2018/09/07/writing-a-chip-8-emulator-instruction-set-part-5/)</li> | `emulator`, `text`
 Writing a Game Boy emulator | Writing a Game Boy emulator | [Link](https://cturt.github.io/cinoop.html) | `text`, `emulator`
