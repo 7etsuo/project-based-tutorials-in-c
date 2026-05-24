@@ -6,6 +6,7 @@ A curated list of project-based tutorials for building emulators, kernels, datab
 
 [![C projects](https://img.shields.io/badge/C-projects-24599d?style=flat-square&logo=c&logoColor=white)](#contents)
 [![Project based](https://img.shields.io/badge/project--based-learning-2f855a?style=flat-square)](#start-here)
+[![Links](https://github.com/7etsuo/project-based-tutorials-in-c/actions/workflows/links.yml/badge.svg)](https://github.com/7etsuo/project-based-tutorials-in-c/actions/workflows/links.yml)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-6b46c1?style=flat-square)](CONTRIBUTING.md)
 [![X: @tetsuoai](https://img.shields.io/badge/X-@tetsuoai-111111?style=flat-square&logo=x&logoColor=white)](https://x.com/tetsuoai)
 
@@ -22,10 +23,24 @@ Use this list when you want to learn C by building something concrete. Good firs
 
 Have a working project-based C tutorial to add? Read [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Tag Legend
+
+- `text`: Written tutorial, article series, or web book.
+- `video`: Video tutorial or playlist.
+- `book`: Book-length resource.
+- `course`: Structured course.
+- `paid`: Paid resource.
+- `tutorial`: Step-by-step project tutorial.
+- `abandoned`: Useful but no longer actively maintained.
+- `in-progress`: Still being written or released.
+- `archived`: Original link is unavailable or unreliable, and the entry points to a Wayback snapshot.
+- Domain tags such as `compilers`, `emulator`, `http`, `kernel`, `sqlite`, and `virtual-machine` describe the project area.
+
 ## Contents
 
 - [Project based tutorials in C](#project-based-tutorials-in-c)
   - [Start Here](#start-here)
+  - [Tag Legend](#tag-legend)
   - [Contents](#contents)
   - [Computer Architecture](#computer-architecture)
   - [Computer Networking](#computer-networking)
@@ -44,7 +59,7 @@ Name | Description | Link | Tags
 -|-|-|-
 bitwise |  Bitwise is an educational project where we create the software/hardware stack for a computer from scratch. | [GitHub](https://github.com/pervognsen/bitwise) | `abandoned`, `video`
 Emulator 101 | Writing an arcade game emulator is an awesome learning project, and this tutorial will take you through the entire process in a detailed way. Want to really learn how a CPU works? Writing an emulator is the best way to learn about it. | [Link](https://github.com/albert-yu/emulator-101) | `text`
-Virtual Machine in C | Writing a VM in C | [Link](https://web.archive.org/web/20221006172519/https://felix.engineer/blogs/virtual-machine-in-c/) | `text`, `virtual-machine`
+Virtual Machine in C | Writing a VM in C | [Link](https://web.archive.org/web/20221006172519/https://felix.engineer/blogs/virtual-machine-in-c/) | `text`, `virtual-machine`, `archived`
 Writing a CHIP-8 emulator | Writing a Chip 8 emulator | <li>[Part 1](http://craigthomas.ca/blog/2014/06/21/writing-a-chip-8-emulator-part-1/)</li><li>[Part 2](http://craigthomas.ca/blog/2014/07/17/writing-a-chip-8-emulator-part-2/)</li><li>[Part 3](http://craigthomas.ca/blog/2015/02/19/writing-a-chip-8-emulator-draw-command-part-3/)</li><li>[Part 4](http://craigthomas.ca/blog/2017/10/15/writing-a-chip-8-emulator-built-in-font-set-part-4/)</li><li>[Part 5](http://craigthomas.ca/blog/2018/09/07/writing-a-chip-8-emulator-instruction-set-part-5/)</li> | `emulator`, `text`
 Writing a Game Boy emulator | Writing a Game Boy emulator | [Link](https://cturt.github.io/cinoop.html) | `text`, `emulator`
 Write your Own Virtual Machine | In this tutorial, I will teach you how to write your own virtual machine (VM) that can run assembly language programs, such as my friend’s 2048 or my Roguelike. | [Link](https://justinmeiners.github.io/lc3-vm/) | `text`, `virtual-machine`
@@ -56,6 +71,7 @@ Name | Description | Link | Tags
 Beej's Guide to Network Programming | Hey! Socket programming got you down? Is this stuff just a little too difficult to figure out from the man pages? You want to do cool Internet programming, but you don’t have time to wade through a gob of structs trying to figure out if you have to call bind() before you connect(), etc., etc. Well, guess what! I’ve already done this nasty business, and I’m dying to share the information with everyone! You’ve come to the right place. This document should give the average competent C programmer the edge s/he needs to get a grip on this networking noise. | [Link](http://beej.us/guide/bgnet/html/multi/index.html)  | `book`
 Concurrent Servers | A series of posts about concurrent network servers | <li>[Part 1 - Introduction](https://eli.thegreenplace.net/2017/concurrent-servers-part-1-introduction/) </li><li>[Part 2 - Threads](http://eli.thegreenplace.net/2017/concurrent-servers-part-2-threads/)</li><li>[Part 3 - Event-driven](http://eli.thegreenplace.net/2017/concurrent-servers-part-3-event-driven/)</li><li>[Part 4 - libuv](http://eli.thegreenplace.net/2017/concurrent-servers-part-4-libuv/)</li><li>[Part 5 - Redis case study](http://eli.thegreenplace.net/2017/concurrent-servers-part-5-redis-case-study/)</li><li>[Part 6 - Callbacks, Promises and async/await](http://eli.thegreenplace.net/2018/concurrent-servers-part-6-callbacks-promises-and-asyncawait/)</li> | `text`, `concurrency`, `network-programming`
 Building a simple HTTP server | Everything you need to know to Build a simple HTTP server from scratch | [Medium](https://medium.com/from-the-scratch/http-server-what-do-you-need-to-know-to-build-a-simple-http-server-from-scratch-d1ef8945e4fa) | `http`, `text`
+Simple HTTP Web Server in C/C++ from Scratch | Build a functional HTTP web server without third-party libraries. | [GitHub](https://github.com/Dungyichao/http_server) | `http`, `network-programming`, `text`
 Let's code a TCP/IP stack | The purpose of these posts and the resulting software is purely educational - to learn network and system programming at a deeper level. | <li>[Part 1: Ethernet & ARP](http://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/)</li><li>[Part 2: IPv4 & ICMPv4](http://www.saminiir.com/lets-code-tcp-ip-stack-2-ipv4-icmpv4/)<li>[Part 3: TCP Basics & Handshake](http://www.saminiir.com/lets-code-tcp-ip-stack-3-tcp-handshake/)</li><li>[Part 4: TCP Data Flow & Socket API](http://www.saminiir.com/lets-code-tcp-ip-stack-4-tcp-data-flow-socket-api/)</li><li>[Part 5: TCP Retransmission](http://www.saminiir.com/lets-code-tcp-ip-stack-5-tcp-retransmission/)</li>| `networking`, `text`
 Write an MQTT broker from scratch | It’s been a while that for my daily work I deal with IoT architectures and research best patterns to develop such systems, including diving through standards and protocols like MQTT; as I always been craving for new ideas to learn and refine my programming skills, I thought that going a little deeper on the topic would’ve been cool and useful too. So once again I git init a low-level project on my box pushing myself a little further by sharing my steps. | <li>[Part 1 - The protocol](https://codepr.github.io/posts/sol-mqtt-broker)</li><li>[Part 2 - Networking](https://codepr.github.io/posts/sol-mqtt-broker-p2)</li><li>[Part 3 - Server](https://codepr.github.io/posts/sol-mqtt-broker-p3)</li><li>[Part 4 - Data structures](https://codepr.github.io/posts/sol-mqtt-broker-p4)</li><li>[Part 5 - Topic abstraction](https://codepr.github.io/posts/sol-mqtt-broker-p5)</li><li>[Part 6 - Handlers](https://codepr.github.io/posts/sol-mqtt-broker-p6)</li> | `text`, `mqtt`
 Let's make a NTP Client in C | Writing a NTP client in C | [Link](https://lettier.github.io/posts/2016-04-26-lets-make-a-ntp-client-in-c.html) | `ntp`, `text`
@@ -72,12 +88,12 @@ Let's Build a Simple Database | Writing a sqlite clone from scratch in C | [Link
 
 Name | Description | Link | Tags
 -|-|-|-
-Astroids Clone | Simple Astroids clone using assets from Kenney's Space Shooter Redux and Space Shooter Extension | [Link](https://web.archive.org/web/20251017183106/https://gtk.dashgl.com/Astroids/) | `tutorial`
-Brickout Clone | Make a Brickout Clone using the GTK+ library | [Link](https://web.archive.org/web/20250324155704/https://gtk.dashgl.com/Brickout/) | `tutorial`
+Astroids Clone | Simple Astroids clone using assets from Kenney's Space Shooter Redux and Space Shooter Extension | [Link](https://web.archive.org/web/20251017183106/https://gtk.dashgl.com/Astroids/) | `tutorial`, `archived`
+Brickout Clone | Make a Brickout Clone using the GTK+ library | [Link](https://web.archive.org/web/20250324155704/https://gtk.dashgl.com/Brickout/) | `tutorial`, `archived`
 Chess Engine in C | Write a program/engine that plays Chess | [Link](https://www.youtube.com/playlist?list=PLZ1QII7yudbc-Ky058TEaOstZHVbT-2hg) | `tutorial`
 Coding a Sudoku Solver in C | Self explanatory | [Link](https://www.youtube.com/playlist?list=PLkTXsX7igf8edTYU92nU-f5Ntzuf-RKvW) | `tutorial`, `video`
 Coding a Rogue/ Nethack in C | Self explanatory | [Link](https://www.youtube.com/playlist?list=PLkTXsX7igf8erbWGYT4iSAhpnJLJ0Nk5G) | `video`, `tutorial`
-Create a Game Loop using C and SDL | Learn to create a game loop from scratch using the C programming language and SDL | [Link](https://web.archive.org/web/20230404184559/https://www.udemy.com/course/game-loop-c-sdl/) | `course`
+Create a Game Loop using C and SDL | Learn to create a game loop from scratch using the C programming language and SDL | [Link](https://web.archive.org/web/20230404184559/https://www.udemy.com/course/game-loop-c-sdl/) | `course`, `archived`
 Creating a 2D platformer | Learn how to create a simple multi-scrolling 2D platformer | [Link](https://www.parallelrealities.co.uk/tutorials/#ppp) | `tutorial`
 Creating a 2D shoot 'em up | How to create a simple 2D shoot 'em up | [Link](https://www.parallelrealities.co.uk/tutorials/#shooter) | `tutorial`
 Creating a 2D top-down shooter | how to create a simple top-down 2D shooter that we're going to call Battle Arena Donk! Mouse controls will be used extensively throughout | [Link](https://www.parallelrealities.co.uk/tutorials/#bad) | `tutorial`
@@ -85,8 +101,8 @@ Handmade Hero | Handmade Hero is an ongoing project by Casey Muratori to create 
 Hangman | Write hangman the game! | [Link](https://www.youtube.com/playlist?list=PLZ1QII7yudbd2ZHYSEWrSddsvD5PW_r5O) | `video`
 How to Program an NES game in C | Self explanatory| [Link](https://nesdoug.com/) | `tutorial`
 How to Program a Text Adventure in C | Self explanatory | [Link](https://helderman.github.io/htpataic/htpataic01.html) | `tutorial`
-Implementing Solitaire in C | Self explanatory | [Link](https://web.archive.org/web/20200712221906/https://jborza.github.io/games/2020/07/12/solitaire-cli.html) | `tutorial`
-Invaders Clone | Simple Invaders clone using Kenney's Space Shooter redux pack | [Link](https://web.archive.org/web/20250324155704/https://gtk.dashgl.com/Invaders/) | `tutorial`
+Implementing Solitaire in C | Self explanatory | [Link](https://web.archive.org/web/20200712221906/https://jborza.github.io/games/2020/07/12/solitaire-cli.html) | `tutorial`, `archived`
+Invaders Clone | Simple Invaders clone using Kenney's Space Shooter redux pack | [Link](https://web.archive.org/web/20250324155704/https://gtk.dashgl.com/Invaders/) | `tutorial`, `archived`
 Learn How To Develop Your Own GameBoy Games | Self explanatory | [Link](https://www.youtube.com/playlist?list=PLeEj4c2zF7PaFv5MPYhNAkBGrkx4iPGJo)  | `video`
 Learn Video Game Programming in C | Self explanatory | [Link](https://www.youtube.com/playlist?list=PLT6WFYYZE6uLMcPGS3qfpYm7T_gViYMMt) | `video`
 Let’s Make: Dangerous Dave | Self explanatory | [Link](https://www.youtube.com/playlist?list=PLSkJey49cOgTSj465v2KbLZ7LMn10bCF9) | `video`
@@ -97,6 +113,7 @@ SDL 2 Isometric Game Tutorial | Code a Isometric Game in C. Isometric video game
 Simple Tic Tac Toe in C | Self explanatory | [Link](https://www.youtube.com/playlist?list=PLZ1QII7yudbc7_ZgXA-gIXmME41Rs2GP5) | `video`
 Text Adventure | A text based adventure game | <li>[Episode 1](https://youtu.be/J_Igbh0RH8c)</li><li>[Episode 2](https://www.youtube.com/watch?v=7dYKhiruW1M)</li> | `video`
 Tic-tac-toe Game in C with SDL | Self explanatory | [Link](https://www.youtube.com/watch?v=gCVMkKgs3uQ) `video` | `sdl`, `tutorial`, `video`
+Tonc - GBA Programming | Community-maintained guide to Game Boy Advance programming with C, ARM assembly, memory-mapped IO, graphics, input, and demos. | [Link](https://gbadev.net/tonc/) | `gba`, `embedded`, `game-development`, `text`
 Video Game Physics Tutorial | Learn the physics of video games. Covers various topics. | <li>[Part I: An Introduction to Rigid Body Dynamics](https://www.toptal.com/game/video-game-physics-part-i-an-introduction-to-rigid-body-dynamics)</li><li>[Part II: Collision Detection for Solid Objects](https://www.toptal.com/game/video-game-physics-part-ii-collision-detection-for-solid-objects)</li><li>[Part III: Constrained Rigid Body Simulation](https://www.toptal.com/game/video-game-physics-part-iii-constrained-rigid-body-simulation)</li> | `physics`, `tutorial`
 Write Othello Game from scratch in C | Write a crossplatform Othello game - the Othello engine, UI | [Link](https://www.hanshq.net/othello.html) | `tutorial`
 Write The Old-School Fire Effect and Bare-Metal Programming in Assembly and C | Draw fire on the screen! | [Link](https://www.hanshq.net/fire.html) | `tutorial`
@@ -118,12 +135,12 @@ shell-workshop |  Materials from my Strange Loop 2014 workshop, Let's Build a Sh
 Malloc tutorial | Let's write a malloc and see how it works with existing programs! | [Link](https://danluu.com/malloc-tutorial/) | `malloc`
 Let’s write a Kernel | Self explanatory | <li>[Part 1: Kernel 101](https://arjunsreedharan.org/post/82710718100/kernel-101-lets-write-a-kernel)</li><li>[Part 2: Kernel 201](https://arjunsreedharan.org/post/99370248137/kernel-201-lets-write-a-kernel-with-keyboard)</li> | `kernel`, `text`
 Linux containers in 500 lines of code | Self explanatory | [Link](https://blog.lizzie.io/linux-containers-in-500-loc.html) | `containers`, `text`
-Operating systems development for Dummies | If you’ve ever used a computer, you may have found yourself wondering how operating systems function on a low level, or even how you you would go about developing one yourself. To say that kernel development is difficult is a severe understatement, it really is “the great pinnacle of programming”. In this guide, we will introduce the basic tools needed and implement a simple operating system in C and x86 Assembly. | [Link](https://web.archive.org/web/20260407051829/https://medium.com/@lduck11007/operating-systems-development-for-dummies-3d4d786e8ac) | `operating-systems`, `text`
+Operating systems development for Dummies | If you’ve ever used a computer, you may have found yourself wondering how operating systems function on a low level, or even how you you would go about developing one yourself. To say that kernel development is difficult is a severe understatement, it really is “the great pinnacle of programming”. In this guide, we will introduce the basic tools needed and implement a simple operating system in C and x86 Assembly. | [Link](https://web.archive.org/web/20260407051829/https://medium.com/@lduck11007/operating-systems-development-for-dummies-3d4d786e8ac) | `operating-systems`, `text`, `archived`
 os01 | Bootstrap yourself to write an OS from scratch. A book for self-learner. | [Link](https://tuhdo.github.io/os01/) | `book`
 Hack The Kernel | ops-class.org includes everything you need to learn about operating systems online. | [Link](https://www.ops-class.org/) | `course`
 Re-Writing BSD 4.4 Shell Commands | Self explanatory | <li>[cat](https://www.youtube.com/watch?v=MCuzvy79WWQ)</li><li>[chmod](https://www.youtube.com/watch?v=p7uJBl4A_BA)</li><li>[echo](https://www.youtube.com/watch?v=69CYF7nJKj8)</li><li>[mkdir](https://www.youtube.com/watch?v=t96qYd4OUBM)</li> | `video`
 Writing a Unix Shell | One of the projects that I am exploring at RC, is writing a UNIX shell. This is the first part of a series of posts that will eventually follow. | <li>[Part 1](https://indradhanush.github.io/blog/writing-a-unix-shell-part-1)</li><li>[Part 2](https://indradhanush.github.io/blog/writing-a-unix-shell-part-2)</li><li>[Part 3](https://indradhanush.github.io/blog/writing-a-unix-shell-part-3)</li> | `shell`
-Roll your own toy UNIX-clone OS | This set of tutorials aims to take you through programming a simple UNIX-clone operating system for the x86 architecture. The tutorial uses C as the language of choice, with liberally mixed in bits of assembler. The aim is to talk you through the design and implementation decisions in making an operating system. The OS we make is monolithic in design (drivers are loaded through kernel-mode modules as opposed to user-mode programs), as this is simpler. | [Link](https://web.archive.org/web/20240109133025/http://jamesmolloy.co.uk/tutorial_html/) | `unix`, `text`
+Roll your own toy UNIX-clone OS | This set of tutorials aims to take you through programming a simple UNIX-clone operating system for the x86 architecture. The tutorial uses C as the language of choice, with liberally mixed in bits of assembler. The aim is to talk you through the design and implementation decisions in making an operating system. The OS we make is monolithic in design (drivers are loaded through kernel-mode modules as opposed to user-mode programs), as this is simpler. | [Link](https://web.archive.org/web/20240109133025/http://jamesmolloy.co.uk/tutorial_html/) | `unix`, `text`, `archived`
 The little book about OS development | This text is a practical guide to writing your own x86 operating system. It is designed to give enough help with the technical details while at the same time not reveal too much with samples and code excerpts. We’ve tried to collect parts of the vast (and often excellent) expanse of material and tutorials available, on the web and otherwise, and add our own insights into the problems we encountered and struggled with. | [Link](https://littleosbook.github.io/)  | `book`
 Write a Shell in C | Self explanatory | [Link](https://brennan.io/2015/01/16/write-a-shell-in-c/) | `shell`
 Write a simple memory allocator | This article is about writing a simple memory allocator in C. We will implement malloc(), calloc(), realloc() and free(). | [Link](https://arjunsreedharan.org/post/148675821737/write-a-simple-memory-allocator) | `allocator`
@@ -137,7 +154,8 @@ Name | Description | Link | Tags
 -|-|-|-
 acwj | A compiler writing journey | [Link](https://github.com/DoctorWkt/acwj) | `compilers`
 A Compiler Writing Journey (RadiiLab) | Write a self-compiling compiler for a subset of ANSI C, with practical notes on lexing, parsing, code generation, types, structs, and more. | [Link](https://radiilab.github.io/compiler-dev-tutorial/) | `compilers`, `text`
-Writing a regular expression matcher | Self explanatory | [Link](https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html) | `regular-expression`
+Writing a C Compiler | Build a compiler for a significant subset of C, adding features chapter by chapter while learning lexing, parsing, assembly, and code generation. | [Link](https://nostarch.com/writing-c-compiler) | `compilers`, `book`, `paid`
+Writing a regular expression matcher | Self explanatory | [Link](https://web.archive.org/web/20260426191749/https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html) | `regular-expression`, `archived`
 A Regular Expression Matching Can Be Simple And Fast | Self explanatory | [Link](https://swtch.com/~rsc/regexp/regexp1.html) | `regular-expression`
 Baby’s First Garbage Collector | Garbage collection is considered one of the more shark-infested waters of programming, but in this post, I’ll give you a nice kiddie pool to paddle around in. (There may still be sharks in it, but at least it will be shallower.) | [Link](http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/) | `gc`
  Build Your Own Lisp |  Learn C and build your own programming language in 1000 lines of code! | [Link](http://www.buildyourownlisp.com/) | `book`
