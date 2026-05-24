@@ -1,11 +1,32 @@
-# Project based tutorials in C
+<div align="center">
 
-A list of tutorials that work towards the making of small to large projects in C.
+# Project-Based Tutorials in C
 
-## Table of Contents
+A curated list of project-based tutorials for building emulators, kernels, databases, games, compilers, shells, and low-level tools in C.
+
+[![C projects](https://img.shields.io/badge/C-projects-24599d?style=flat-square&logo=c&logoColor=white)](#contents)
+[![Project based](https://img.shields.io/badge/project--based-learning-2f855a?style=flat-square)](#start-here)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-6b46c1?style=flat-square)](CONTRIBUTING.md)
+[![X: @tetsuoai](https://img.shields.io/badge/X-@tetsuoai-111111?style=flat-square&logo=x&logoColor=white)](https://x.com/tetsuoai)
+
+</div>
+
+## Start Here
+
+Use this list when you want to learn C by building something concrete. Good first paths:
+
+- **Systems programming:** [Write a Shell in C](#operating-systems), [Malloc tutorial](#operating-systems), then [Linux containers in 500 lines of code](#operating-systems).
+- **Computer architecture:** [Writing a CHIP-8 emulator](#computer-architecture), [Writing a Game Boy emulator](#computer-architecture), then [Write your Own Virtual Machine](#computer-architecture).
+- **Languages and tools:** [Build Your Own Lisp](#programming-languages), [Crafting Interpreters](#programming-languages), then [A Compiler Writing Journey](#programming-languages).
+- **Networked software:** [Beej's Guide to Network Programming](#computer-networking), [Concurrent Servers](#computer-networking), then [Build Your Own Redis with C/C++](#databases).
+
+Have a working project-based C tutorial to add? Read [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Contents
 
 - [Project based tutorials in C](#project-based-tutorials-in-c)
-  - [Table of Contents](#table-of-contents)
+  - [Start Here](#start-here)
+  - [Contents](#contents)
   - [Computer Architecture](#computer-architecture)
   - [Computer Networking](#computer-networking)
   - [Databases](#databases)
@@ -13,6 +34,9 @@ A list of tutorials that work towards the making of small to large projects in C
   - [Operating Systems](#operating-systems)
   - [Programming Languages](#programming-languages)
   - [Uncategorized](#uncategorized)
+  - [Resources](resources.md)
+  - [Contributing](#contributing)
+  - [Maintainer](#maintainer)
 
 ## Computer Architecture
 
@@ -41,6 +65,7 @@ Let's make a NTP Client in C | Writing a NTP client in C | [Link](https://lettie
 
 Name | Description | Link | Tags
 -|-|-|-
+Build Your Own Redis with C/C++ | Build a Redis-inspired server while practicing network programming, data structures, and low-level C. | [Link](https://build-your-own.org/redis/) | `database`, `networking`, `text`
 Let's Build a Simple Database | Writing a sqlite clone from scratch in C | [Link](https://cstack.github.io/db_tutorial/) | `text`, `sqlite`
 
 ## Game Development
@@ -111,6 +136,7 @@ Write a shell in C | Ever wondered how that terminal just works? A more correct 
 Name | Description | Link | Tags
 -|-|-|-
 acwj | A compiler writing journey | [Link](https://github.com/DoctorWkt/acwj) | `compilers`
+A Compiler Writing Journey (RadiiLab) | Write a self-compiling compiler for a subset of ANSI C, with practical notes on lexing, parsing, code generation, types, structs, and more. | [Link](https://radiilab.github.io/compiler-dev-tutorial/) | `compilers`, `text`
 Writing a regular expression matcher | Self explanatory | [Link](https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html) | `regular-expression`
 A Regular Expression Matching Can Be Simple And Fast | Self explanatory | [Link](https://swtch.com/~rsc/regexp/regexp1.html) | `regular-expression`
 Baby’s First Garbage Collector | Garbage collection is considered one of the more shark-infested waters of programming, but in this post, I’ll give you a nice kiddie pool to paddle around in. (There may still be sharks in it, but at least it will be shallower.) | [Link](http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/) | `gc`
@@ -131,3 +157,13 @@ A dummy blockchain implementation in C | Self explanatory | <li>[Part 1](https:/
 A Bigint Calculator | This is a programming exercise I've wanted to do for a long time: an implementation of arbitrary-precision integer ("bigint") arithmetic in C. | [Link](https://www.hanshq.net/bigint.html) | `calculator`
 Zip Files | Write your own ZIP from scratch in C | [Link](https://www.hanshq.net/zip.html) | `compression`
 SVG Library in C | In this post I will develop a simple C library to create and save an SVG (Scalable Vector Graphics) file, complete with a few examples of its use. | [Link](http://www.codedrome.com/svg-library-in-c/) | `graphics`
+
+## Contributing
+
+Pull requests are welcome for tutorials that build a concrete project in C. Please keep entries categorized, use working links, and prefer a Wayback snapshot when the original tutorial is no longer available.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full format.
+
+## Maintainer
+
+Maintained by [@tetsuoai](https://x.com/tetsuoai).
